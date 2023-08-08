@@ -1,0 +1,29 @@
+*{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+.show-summary{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+.show-summary h2{
+     margin: 30px;
+}
+.show-summary p{
+     margin: 50px;
+     font-size: 20px;
+}
+.btn{
+     padding: 10px;
+     background: #e5ecf7;
+     margin: 2px 200px;
+     border-radius: 2px;
+
+}
+
+.footer{
+     display: flex;
+     flex-direction: column;
+}

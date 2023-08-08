@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Link } from 'react-router-dom';
-
-
+import './showList.css' 
 
 const URL = 'https://api.tvmaze.com/search/shows?q=all'
 
@@ -19,11 +18,12 @@ const ShowList = () => {
   return (
     <div>
       <h1>TV Show List</h1>
-      <ul>
+      <ul className='showlist' >
         {shows.map(showData => (
           <li key={showData.show.id}>
-            <Link to={`/show/${showData.show.id}`}>
+            <Link to={`show/${showData.show.id}`}>
               {showData.show.name}
+              <br />
             </Link>
           </li>
         ))}
