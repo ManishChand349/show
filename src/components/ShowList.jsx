@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Link } from 'react-router-dom';
-import './showList.css' 
+import './ShowList.css' 
 
 const URL = 'https://api.tvmaze.com/search/shows?q=all'
 
